@@ -1,0 +1,143 @@
+.filter {
+  width: 312px;
+  min-height: 3200px; /* Set a minimum height for the box */
+  background-color: white; /* Replace with your desired background color */
+  font-size: 24px;
+  //font-weight: bold;
+  padding: 0 12.5px; /* Add some padding for better appearance */
+  box-sizing: border-box;
+  position: relative;
+
+  &_women {
+    position: relative;
+    font-weight: 600;
+    padding: 0;
+    font-size: 1.575rem;
+    line-height: 1.0666666667;
+    width: 280px;
+    height: 32px;
+    margin: 19px 0 30px 0;
+    font-family: 'Calibre', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
+  }
+
+  &_container {
+    width: 272px;
+    height: 24px;
+    box-shadow: none;
+    .category-name {
+      &.expanded {
+        font-weight: bold;
+        color: green;
+      }
+    }
+    .sizeButtonContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .sizeButton {
+      width: auto;  // change width to auto
+      height: 36px;
+      margin: 5px;
+      padding: 0 10px; // adjust padding as needed
+      min-width: 0;
+      color: black;
+      border: 1px solid rgba(128, 128, 128, 0.5);
+      transition: box-shadow 0.3s ease-in-out;
+      font-weight: bold;
+      &.selected {
+        background-color: #000;
+        color: #fff;
+      }
+      &:hover {
+        border-color: black;
+        cursor: pointer;
+      }
+    }
+    .details{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  .allType {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+
+    &_container {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &.expanded {
+      transition: all 0.6s cubic-bezier(0.4, 0, 1, 1);
+      transition-delay: 0.6s;
+    }
+
+  }
+
+}
+
+
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px dashed gray; // Use dashed border style for the top border
+  margin: 10px 0; // adjust as needed
+}
+.colorGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px; // new: this sets a 10px gap between the items
+
+  > div {
+    display: flex;
+    align-items: center;
+    flex: 0 0 45%;
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+.roundImage {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(128, 128, 128, 0.5); // gray with 50% transparency
+  transition: box-shadow 0.3s ease-in-out;
+  &.selected {
+    border: 2px solid #000;
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 1px white, 0 0 0 3px gray;
+  }
+}
+.details {
+  /* ...existing styles... */
+
+  button.viewMoreButton {
+    border: none;
+    color: grey;
+    background-color: transparent;
+    margin-top: 8px;
+    text-align: left;
+    padding: 0;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 16px;
+    .view_container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

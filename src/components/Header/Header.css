@@ -1,0 +1,412 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: -4.125rem;
+  z-index: 104;
+}
+.header .promo-banner_bannerInfoList {
+  background: #fff;
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  position: relative;
+  line-height: 1;
+}
+.header .promo-banner_bannerInfoList a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.header .promo-banner_bannerInfoList a::after {
+  content: "";
+  background: #57585b;
+  display: block;
+  height: 0.0625rem;
+  top: 0.0625rem;
+  transition: background 0.5s ease-in-out;
+}
+.header .promo-banner_bannerInfoList .promo-banner_bannerCloseIcon {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+}
+.header .top-nav {
+  position: relative;
+  z-index: 1;
+  background: #fafafa;
+}
+.header .top-nav .top-nav-wrap {
+  width: 100%;
+  max-width: 85.75rem;
+  margin: 0 12rem;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .top-nav .top-nav-wrap .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  font-size: 14px;
+  height: 100%;
+}
+.header .top-nav .top-nav-wrap .nav .nav_icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+.header .top-nav .top-nav-wrap .nav .text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header .top-nav .top-nav-wrap .nav .text::after {
+  bottom: 0;
+}
+.header .top-nav-menu {
+  width: 100%;
+  background: #fff;
+}
+.header .top-nav-menu .nav-menu {
+  display: grid;
+  grid-area: desktop;
+  grid-template-areas: "logo primary secondary";
+  grid-template-columns: 5.375rem auto 1fr;
+  grid-template-rows: 4.75rem minmax(0, auto);
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1.5625rem;
+  width: 100%;
+  max-width: 85.75rem;
+}
+.header .top-nav-menu .nav-menu .logo {
+  display: flex;
+  grid-area: logo;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header .top-nav-menu .nav-menu .ul {
+  font-weight: 900;
+  grid-area: primary;
+  letter-spacing: 0.075rem;
+  line-height: 1.25rem;
+  position: relative;
+  transition: color 0.1s linear;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: -1.25rem;
+}
+.header .top-nav-menu .nav-menu .ul .li {
+  padding: 0.3125rem 1.25rem;
+  cursor: pointer;
+}
+.header .top-nav-menu .nav-menu .ul .li .red {
+  color: #d22030;
+}
+.header .top-nav-menu .nav-menu .secondary {
+  grid-area: secondary;
+  height: 100%;
+  padding: 1.125rem 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .top-nav-menu .nav-menu .secondary .search {
+  display: flex;
+  position: relative;
+}
+.header .top-nav-menu .nav-menu .secondary .search .search_searchIcon {
+  position: absolute;
+  top: 1.125rem;
+  left: 0.75rem;
+  z-index: 2;
+}
+.header .top-nav-menu .nav-menu .secondary .search .input {
+  box-sizing: border-box;
+  height: 3.125rem;
+  border-radius: 0.25rem;
+  background: #fff;
+  border: 0.0625rem solid #a091a9;
+  outline: none;
+  color: #57585b;
+  padding: 0 2rem 0 2.5rem;
+  width: 100%;
+  min-width: 264px;
+  -webkit-appearance: none;
+  position: relative;
+  z-index: 1;
+}
+.header .top-nav-menu .nav-menu .secondary .search .input:focus {
+  border: 0.0625rem solid #000;
+}
+.header .top-nav-menu .nav-menu .secondary .search .input:hover::placeholder {
+  color: #000;
+}
+.header .top-nav-menu .nav-menu .secondary .search .results {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  z-index: 1;
+  border-radius: 0.25rem;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 0;
+  transition: 0.5s ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.header .top-nav-menu .nav-menu .secondary .search .results.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.header .top-nav-menu .nav-menu .secondary .search .results .res {
+  margin: 12px 15px;
+  font-weight: 400;
+  font-size: 19px;
+  cursor: pointer;
+}
+.header .top-nav-menu .nav-menu .secondary .search .results .res.hint {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #57585b;
+  pointer-events: none;
+}
+.header .top-nav-menu .nav-menu .secondary .search .mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  transition: 0.5s ease-out;
+  opacity: 0;
+}
+.header .top-nav-menu .nav-menu .secondary .search .mask.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.header .top-nav-menu .nav-menu .secondary .sign-in {
+  display: flex;
+  align-items: center;
+  margin: 0 1.375rem;
+  cursor: pointer;
+}
+.header .top-nav-menu .nav-menu .secondary .sign-in .text {
+  font-size: 14px;
+  margin-left: 0.5rem;
+}
+.header .top-nav-menu .nav-menu .secondary .sign-in:hover .text::after {
+  width: 100%;
+}
+.header .top-nav-menu .nav-menu .secondary .sign-in:after .text {
+  bottom: -5px;
+}
+.header .top-detail {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  padding-bottom: 20px;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+  height: 0;
+  transition: 0.125s ease-out;
+}
+.header .top-detail.visible {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+.header .top-detail .top-detail-up {
+  width: 100%;
+  max-width: 85.75rem;
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-areas: "left center right activity  activity activity";
+  grid-template-columns: 5.375rem repeat(11, 1fr) 0;
+  grid-template-rows: auto;
+  row-gap: 2rem;
+  padding: 1.5rem 1.5rem 0;
+}
+.header .top-detail .top-detail-up .top-detail-left {
+  grid-area: left;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border-right: 1px solid #d5d5d5;
+  margin-right: 2.5rem;
+}
+.header .top-detail .top-detail-up .top-detail-left .li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 0;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.header .top-detail .top-detail-up .top-detail-left .li .middle {
+  display: flex;
+  align-items: center;
+}
+.header .top-detail .top-detail-up .top-detail-left .li:hover svg {
+  transform: translateX(15px);
+}
+.header .top-detail .top-detail-up .top-detail-left .li svg {
+  transform: translateX(10px);
+  transition: all 0.5s;
+  color: #d22030;
+}
+.header .top-detail .top-detail-up .top-detail-center {
+  grid-area: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: span 6;
+  grid-row-gap: 1rem;
+}
+.header .top-detail .top-detail-up .top-detail-center .list .ol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 0;
+  margin: 5px 0;
+  min-height: 19px;
+  cursor: pointer;
+}
+.header .top-detail .top-detail-up .top-detail-center .list .ol .middle {
+  display: flex;
+  align-items: center;
+}
+.header .top-detail .top-detail-up .top-detail-center .list .ol .middle:hover svg {
+  transform: translateX(15px);
+}
+.header .top-detail .top-detail-up .top-detail-center .list .ol .middle svg {
+  transform: translateX(10px);
+  transition: all 0.5s;
+  color: #d22030;
+}
+.header .top-detail .top-detail-up .top-detail-right {
+  grid-area: right;
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-column: span 6;
+  text-align: left;
+}
+.header .top-detail .top-detail-up .top-detail-right .top-detail-img {
+  min-height: 205px;
+  width: 100%;
+}
+.header .top-detail .top-detail-up .top-detail-right .top-detail-img .img {
+  width: 100%;
+}
+.header .top-detail .top-detail-up .top-detail-right .top-detail-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px 0;
+}
+.header .top-detail .top-detail-up .top-detail-right .top-detail-hint {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header .top-detail .top-detail-up .top-detail-right .top-detail-hint:hover svg {
+  transform: translateX(15px);
+}
+.header .top-detail .top-detail-up .top-detail-right .top-detail-hint svg {
+  transform: translateX(10px);
+  transition: all 0.5s;
+  color: #d22030;
+}
+.header .top-detail .top-detail-down {
+  background: #fafafa;
+  height: 60px;
+}
+.header .top-detail .top-detail-down .top-detail-down-content {
+  max-width: 85.75rem;
+  margin: 0 auto;
+  padding-left: 172px;
+  display: grid;
+  grid-template-areas: "left center right activity  activity activity";
+  grid-template-columns: 5.375rem repeat(11, 1fr) 0;
+  grid-template-rows: auto;
+  row-gap: 2rem;
+  padding: 1.5rem 1.5rem 0;
+}
+.header .top-detail .top-detail-down .top-detail-down-content .top-detail-down-left {
+  grid-area: left;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border-right: 1px solid #d5d5d5;
+  margin-right: 2.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.075rem;
+  color: #57585b;
+}
+.header .top-detail .top-detail-down .top-detail-down-content .top-detail-down-center {
+  grid-area: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column: span 6;
+  grid-row-gap: 1rem;
+}
+.header .top-detail .top-detail-down .top-detail-down-content .top-detail-down-center .top-detail-down-li {
+  cursor: pointer;
+}
+.header .top-detail .top-detail-down .top-detail-down-content .top-detail-down-right {
+  grid-area: right;
+  display: grid;
+  grid-column: span 6;
+  text-align: right;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+.header .top-detail .top-detail-down .top-detail-down-content .top-detail-down-right .middle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .top-detail .top-detail-down .top-detail-down-content .top-detail-down-right:hover svg {
+  transform: translateX(15px);
+}
+.header .top-detail .top-detail-down .top-detail-down-content .top-detail-down-right svg {
+  transform: translateX(10px);
+  transition: all 0.5s;
+  color: #d22030;
+}
+.header .top-detail-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  transition: 0.125s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+.header .top-detail-mask.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=Header.css.map */

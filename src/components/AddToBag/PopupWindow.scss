@@ -1,0 +1,112 @@
+.popup-modal {
+  .modal-inner-wrapper {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 74%, 0.5);
+    margin: 0 0 3.125rem;
+    padding: 0.3125rem;
+    width: 925px;
+    height: 260px;
+
+    .divider {
+      width: 100%;
+      height: 1px;
+      background-color: #e0e0e0;
+      margin: 1rem 0;
+    }
+
+    .top-section {
+      width: 873px;
+      height: 49.3px;
+      display: flex;
+      justify-content: space-between;
+
+      .left-content {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      h2 {
+        margin-left: 1rem;
+      }
+
+      .close-icon {
+        cursor: pointer;
+      }
+    }
+
+    .middle-section {
+      display: flex;
+      justify-content: space-between;
+
+      .left-content {
+        display: flex;
+        border-right: 1px solid #e0e0e0;
+        padding-right: 1rem;
+
+        .product-image {
+          width: 126.48px;
+          height: 151.78px;
+          margin-right: 1rem;
+        }
+
+        .product-info {
+          width: 416.98px;
+          height: 155.97px;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .right-content {
+        width: 290.98px;
+        height: 155.97px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 1rem;
+
+        .subtotal {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+        }
+
+        .checkout-button, .continue-shopping {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 1rem;
+          text-decoration: none;
+          background-color: #d31334;
+          border-color: #d31334;
+          color: #fff;
+          cursor: pointer;
+          margin-bottom: 1rem;
+
+          svg {
+            margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ctaLinkPrimary {
+  font-size: .875rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: 1.4285714286;
+  font-weight: 600;
+  letter-spacing: .075rem;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}

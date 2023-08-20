@@ -1,0 +1,97 @@
+@charset "UTF-8";
+body {
+  font-family: "Calibre", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+
+section {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+/* 引入字体  */
+@font-face {
+  font-family: "Calibre";
+  src: url(./assets/fonts/Calibreweb-Light.woff2);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Calibre";
+  src: url(./assets/fonts/Calibreweb-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Calibre";
+  src: url(./assets/fonts/Calibreweb-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Calibre";
+  src: url(./assets/fonts/Calibreweb-Semibold.woff2);
+  font-weight: 600;
+}
+.hover-bold {
+  position: relative;
+}
+.hover-bold::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.25rem;
+  bottom: -0.3125rem;
+  top: auto;
+  left: 0;
+  right: 100%;
+  background: #d22030;
+  width: 0;
+  transition: width 0.125s;
+}
+.hover-bold:hover::after {
+  width: 1.5rem;
+}
+
+.hover {
+  display: inline;
+  position: relative;
+}
+.hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.125rem;
+  bottom: -0.12rem;
+  top: auto;
+  left: 0;
+  right: 100%;
+  background: #d22030;
+  width: 0;
+  transition: width 0.4s;
+}
+.hover:hover::after {
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

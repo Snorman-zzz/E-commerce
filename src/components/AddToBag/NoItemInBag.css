@@ -1,0 +1,120 @@
+.app {
+  width: 1440px;
+  margin: 0 auto;
+}
+.app .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70.19px;
+  width: 100%;
+  background-color: white;
+}
+.app .header .logo {
+  height: 50px;
+  width: auto;
+}
+.app .main-content {
+  width: 1440px;
+  height: 968.25px;
+  margin: 4rem 0;
+  text-align: center;
+  font-family: Calibre, Verlag, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  color: #000;
+}
+.app .main-content .bag-love-heading {
+  font-family: Calibre, Verlag, Helvetica, sans-serif;
+  font-size: 3.5625rem;
+  line-height: 0.9824561404;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 1.375rem;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  color: #000;
+}
+.app .main-content .love-button {
+  display: inline-flex;
+  width: 180.64px;
+  height: 52px;
+  background-color: #c8102e;
+  border-color: #c8102e;
+  color: #fff;
+  border: 0.0625rem solid;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-family: Calibre, Verlag, Helvetica, sans-serif;
+  position: relative;
+  bottom: 900px;
+}
+.app .footer {
+  color: #000;
+  font-size: 16px;
+  line-height: 1.2;
+  background: #fff;
+  font-family: Calibre, Verlag, Helvetica, sans-serif;
+  flex-direction: column;
+}
+.app .footer .footer-top {
+  width: 100%;
+  max-width: 85.75rem;
+  height: 129.56px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.app .footer .footer-top .footer-link {
+  color: #57585b;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+.app .footer .footer-bottom {
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: Calibre, Verlag, Helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 85.75rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  border-top: 0.0625rem solid #d5d5d5;
+}
+.app .footer .footer-bottom .legal-links {
+  display: flex;
+  flex-direction: column-reverse;
+  color: #57585b;
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
+  font-weight: 400;
+}
+.app .footer .footer-bottom .legal-links a {
+  text-decoration: underline;
+  color: inherit;
+}
+@media only screen and (min-width: 62rem) {
+  .app .footer .footer-bottom {
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+  }
+}
+
+/*# sourceMappingURL=NoItemInBag.css.map */

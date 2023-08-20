@@ -1,0 +1,55 @@
+.whyWeMadeThis {
+  width: 100%;
+  height: 523.31px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .why-we-made-this_heading {
+    font-size: 6.25rem;
+    line-height: 0.92;
+    margin: 0;
+  }
+
+  .why-we-made-this_heading:after {
+    color: #d22030;
+    content: "—";
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1.875rem;
+    width: 1.5rem;
+  }
+
+  .why-we-made-this_text {
+    margin: 1em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 19px; /* Set the font size to 19px */
+    line-height: 1.5rem;
+    font-family: 'Calibre', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif; /* Set the font family */
+  margin-left: 0
+  ;
+  }
+
+
+  .images {
+    display: flex; // By default, flex-direction is row, so images will be placed horizontally
+    align-items: center;
+
+    img {
+      width: 420px; // Adjust the width as needed
+      height: 500px; // Adjust the height as needed
+      margin: 10px; // Add spacing between images
+    }
+  }
+}

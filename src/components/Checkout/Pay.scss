@@ -1,0 +1,232 @@
+.app {
+  width: 100%;
+  margin: 0 auto;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70.19px;
+    width: 100%;
+    background-color: white;
+
+    .logo {
+      height: 50px; // Adjust based on your logo size
+      width: auto;
+    }
+  }
+  .main_container{
+    width: 1440px;
+    height: 1289px;
+    padding: 0 50px 60px 50px;
+
+    .checkout{
+      padding-left: 11rem;
+      h1{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+
+    }
+    &_body{
+      display: flex;
+      justify-content: center;
+      .account{
+        width: 680px;
+        height: 300px;
+        background-color: white;
+        padding: 16px 25px 40px;
+        margin:0 25px 8px 25px;
+        .log_in{
+          display: flex;
+          gap: 5px;
+          padding: 5px 0;
+          a{
+            display: flex;
+            align-items: center;
+            text-decoration: underline;
+          }
+          p{
+            margin: 0;
+          }
+        }
+        .log_in_successed{
+          font-size: 18px;
+          color: green;
+
+        }
+
+        .email_pwd {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+
+          .input-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1;
+
+
+            label {
+              font-size: 1rem;
+              margin-bottom: 0.25rem;
+            }
+
+            input {
+              background-color: #fff;
+              background-position: center right 1rem;
+              background-repeat: no-repeat;
+              border: 0.0625rem solid #000;
+              border-radius: 0.25rem;
+              display: block;
+              font-size: 1.125rem;
+              height: 1.25rem;
+              padding: 0.875rem 1.62rem;
+              box-shadow: none;
+              width: 235px;
+
+              &.invalid {
+                border: 1px solid red;
+                box-shadow: #0070ba;
+              }
+            }
+          }
+        }
+
+        button {
+          border: #8d9196 0.0625rem solid;
+          border-radius: 0.25rem;
+          justify-content: center;
+          padding: 1rem;
+          text-align: center;
+          text-decoration: none;
+          background-color: #8d9196;
+          margin-top: 0.9375rem;
+          margin-right: 0.625rem;
+          display: flex;
+          width: 638px;
+          font-size: 1rem;
+          font-weight: 600;
+          color: white;
+        }
+        .checkout-button {
+          background-color: #a00d25;
+          border-color: #a00d25;
+          color: #fff;
+          line-height: 1.25rem;
+          margin: .5rem 0;
+          cursor: pointer;
+          border: .0625rem solid;
+          border-color: currentcolor;
+          border-radius: .25rem;
+          display: inline-flex;
+          justify-content: center;
+          padding: 1rem;
+          text-align: center;
+          text-decoration: none;
+          font-weight: 600;
+          letter-spacing: .075rem;
+          text-transform: uppercase;
+          svg{
+            margin-right: 5px;
+          }
+        }
+        .paypal-button{
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+
+
+
+      .order_Summary{
+        width: 342px;
+        height: 478px;
+        margin-left: 25px;
+
+        .my_bag{
+          display: flex;
+          padding-bottom: 12px;
+          justify-content: space-between;
+          &_left{
+            display: flex;
+            gap: 5px;
+          }
+          &_right{
+            font-weight: 500;
+            font-size: 1.1875rem;
+          }
+          .show_item_quantanty{
+            font-size: 1.1875rem;
+            width: 60px;
+            height: 21px;
+          }
+        }
+        .my-bag-items{
+          border-top: 0.0625rem solid #d5d5d5;
+          border-bottom: 0.0625rem solid #d5d5d5;
+        }
+        .checkout-item {
+          display: flex;
+          padding: 10px;
+          border-bottom: 1px solid #eee;
+
+          .item-image {
+            width: 4.4375rem;
+            height: 5.3125rem;
+            display: block;
+          }
+
+          .item-detail {
+            .item-details-wrap {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              padding-left: 10px;
+              margin: 0;
+              width: 261px;
+              line-height: 1.25rem;
+              .name{
+                font-size: 1.0625rem;
+                font-weight: 500;
+              }
+              .color .size{
+                font-size: 1.0625rem;
+              }
+              .quantity_price{
+                display: flex;
+                justify-content: space-between;
+                width: 261px;
+              }
+            }
+          }
+      }
+        .text{
+          display: flex;
+          flex-direction: column;
+          width: 342px;
+          height: 33px;
+          line-height: 1.5;
+          .text_layout{
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .order_total{
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1875rem;
+            font-weight: 500;
+            line-height: 1.26;
+          }
+        }
+    }
+
+
+    }
+  }
+}

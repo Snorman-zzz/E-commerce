@@ -1,0 +1,58 @@
+.topLineReview .container_review {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header rating size write";
+  grid-template-columns: 1fr 1fr 1fr 284px;
+  grid-gap: 20px;
+  align-items: center;
+}
+.topLineReview .container_review .topLineReview_text {
+  grid-area: header;
+  font-size: 55px;
+  font-weight: bold;
+}
+.topLineReview .container_review .topLineReview_rating {
+  grid-area: rating;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.topLineReview .container_review .topLineReview_rating .topLineReview_rating_first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.topLineReview .container_review .topLineReview_rating .topLineReview_rating_first .topLineReview_rating_first_text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.topLineReview .container_review .topLineReview_rating .topLineReview_rating_first .topLineReview_rating_first_star {
+  display: flex;
+}
+.topLineReview .container_review .topLineReview_rating .topLineReview_rating_second {
+  font-size: 14px;
+  font-weight: 300;
+}
+.topLineReview .container_review .topLineReview_size {
+  grid-area: size;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topLineReview .container_review .topLineReview_size .topLineReview_size_text {
+  font-size: 30px;
+  font-weight: 500;
+}
+.topLineReview .container_review .topLineReview_size .topLineReview_size_sizeRating {
+  display: flex;
+  flex-direction: row;
+}
+.topLineReview .container_review .topLineReview_write {
+  grid-area: write;
+}
+.topLineReview .container_review .topLineReview_write .writeReviewBtn {
+  height: 40px;
+}
+
+/*# sourceMappingURL=topReview.css.map */

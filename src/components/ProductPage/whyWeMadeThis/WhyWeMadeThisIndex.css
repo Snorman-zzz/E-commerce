@@ -1,0 +1,11 @@
+.index {
+  position: relative;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+/*# sourceMappingURL=WhyWeMadeThisIndex.css.map */

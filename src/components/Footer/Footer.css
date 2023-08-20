@@ -1,0 +1,92 @@
+.footer .footer_wrap {
+  width: 1372px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  font-weight: normal;
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer .footer_wrap .footer_primaryMenuInner {
+  padding: 1rem 0 0;
+  display: inline-block;
+  border: none;
+  letter-spacing: 1.2px;
+  text-align: left;
+}
+.footer .footer_wrap .footer_primaryMenuInner .title {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.footer .footer_wrap .footer_primaryMenuInner .title:hover {
+  opacity: 60%;
+}
+.footer .footer_wrap .footer_primaryMenuInner .ul {
+  display: grid;
+  padding: 1.5rem 0;
+  grid-gap: 1.5rem;
+}
+.footer .footer_wrap .footer_primaryMenuInner .ul .li {
+  color: rgb(87, 88, 91);
+  font-size: 17px;
+  cursor: pointer;
+}
+.footer .footer_wrap .footer_primaryMenuInner .ul .li.bold {
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer .footer_wrap .footer_socialMenu {
+  border-bottom: none;
+  margin: 1rem 0 0;
+  color: #57585b;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+.footer .footer_wrap .footer_socialMenu a {
+  color: #57585b;
+}
+.footer .footer_wrap .footer_socialMenu a:hover svg {
+  opacity: 0.5;
+}
+.footer .legal_legalMenu {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+  border-top: 0.0625rem solid #d5d5d5;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 85.75rem;
+  font-size: 0.875rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: 1.4285714286;
+  color: #57585b;
+  padding: 1.5rem 1rem;
+}
+.footer .legal_legalMenu a {
+  color: rgb(87, 88, 91);
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.footer .legal_legalMenu .legal_legalLinks {
+  display: flex;
+}
+.footer .legal_legalMenu .legal_legalLinks .line {
+  width: 1px;
+  background: #d5d5d5;
+  height: 100%;
+  margin: 0 0.5rem;
+}
+
+/*# sourceMappingURL=Footer.css.map */

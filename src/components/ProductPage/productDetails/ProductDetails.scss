@@ -1,0 +1,88 @@
+.purchase {
+  background: #fff;
+  border: 0.0625rem solid #e6e6e6;
+  border-radius: 0.25rem;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  overflow: hidden;
+
+  .ship {
+    border-bottom: 0.0625rem solid #e6e6e6;
+    line-height: 1.5rem;
+    padding: 0.75rem 0.625rem 0.75rem 2.25rem;
+    position: relative;
+
+    .ship-radio {
+      position: absolute;
+      left: 0;
+      top: .3rem;
+    }
+
+    .ship-title {
+      font-size: 1.5rem;
+      font-weight: 900;
+    }
+  }
+
+  .pick {
+    background: #fafafa;
+    border-bottom: 0.0625rem solid #e6e6e6;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    .pick-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1rem 1rem 0.5rem;
+
+
+      .pick-title {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        display: flex;
+        align-items: center;
+
+        .icon {
+          height: 1rem;
+          width: 1rem;
+          margin-right: .5rem;
+        }
+      }
+    }
+
+    .prompt {
+      padding: 0 2.5rem 1rem 2rem;
+    }
+  }
+
+  .add-to-bag {
+    border: 0.0625rem solid #d31334;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #d31334;
+    color: #fff;
+    display: flex;
+    //width: 100%;
+    margin: 0.5rem 0.625rem;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .075rem;
+    text-transform: uppercase;
+    &_btn{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

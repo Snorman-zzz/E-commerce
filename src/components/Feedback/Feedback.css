@@ -1,0 +1,13 @@
+.feedback-btn-img {
+  padding: 0px;
+  right: 0px;
+  top: 50%;
+  border: none;
+  z-index: 99999990;
+  position: fixed;
+  cursor: pointer;
+  line-height: 1px;
+  margin-top: 0px;
+}
+
+/*# sourceMappingURL=Feedback.css.map */

@@ -1,0 +1,14 @@
+.filter {
+  width: 279.75px;
+  min-height: 3372px; /* Set a minimum height for the box */
+  background-color: #f0f0f0; /* Replace with your desired background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px; /* Add some padding for better appearance */
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=Filter.css.map */

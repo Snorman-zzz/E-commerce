@@ -1,0 +1,32 @@
+.review {
+  margin: 0;
+  max-width: 1500px;
+  &_header {
+    height: 22px;
+    display: flex;
+    align-items: center;
+  }
+  .container{
+    width: 1350px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    .review_filter{
+      width:312px;
+      padding-left: 50px;
+
+    }
+    .result_Review{
+      width: 980px;
+      height: 306.19px;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      padding-left: 50px;
+
+
+    }
+
+  }
+
+}

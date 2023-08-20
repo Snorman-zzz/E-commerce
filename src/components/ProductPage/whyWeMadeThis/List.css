@@ -1,0 +1,12 @@
+.descriptionList {
+  width: 1322px;
+  height: 448px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=List.css.map */
