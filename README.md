@@ -1,4 +1,4 @@
-# Lululemon React Project
+# E-commerce Online Shopping React Project
 
 ### Download or git clone it to your local environment and run:
 `npm i` to install the npm dependencies
