@@ -388,7 +388,7 @@ const Header = () => {
                             </svg>
                             <div className='text hover'>Sign in</div>
                         </div>
-                        <Link to={`/checkout`}>
+                        <Link to={`/shop/myBag`}>
                             <div className={'cart-icon '+(bagItems.length?'active':'')}>
                                 <div className="num">{bagItems.reduce((prev,next)=>{prev +=next.quantity;return prev},0)}</div>
                                 <svg
